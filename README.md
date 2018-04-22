@@ -16,3 +16,4 @@ This week we will go through the missing OWASP Top 10 Security Risks (we will sk
 ## Thuersdays lesson is cancelled, due to the "event" next week
 Spend you time on the courses, suffering from you absence next week
 
+
