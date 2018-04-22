@@ -1,6 +1,6 @@
 # Week 12 
 
-This week we will go throug the missing OWASP Top 10 Security Risks (we will skip A4).
+This week we will go through the missing OWASP Top 10 Security Risks (we will skip A4).
 - A6 - Security Misconfiguration (Lars)
 - A8 - Insecure Deserialization (Kasper)
 
