@@ -2,6 +2,11 @@
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * The purpose of SerialReader is to...
@@ -21,5 +26,16 @@ public class SerialReader {
         } catch ( IOException | ClassNotFoundException ex ) {
             ex.printStackTrace();
         } 
+    }
+    
+    public static void readFromURL( String urlString ) {
+        try {
+            URL url = new URL( urlString );
+            URLConnection connection = url.openConnection();
+            ObjectInputStream ois = new ObjectInputStream( connection.getInputStream());
+            // ... to do
+        } catch ( Exception ex ) {
+            ex.printStackTrace();
+        }
     }
 }

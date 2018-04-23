@@ -17,21 +17,22 @@ public class MyLoader {
 
             // Create an instance of the class just loaded
             Object o =  c.newInstance();
-            // invokeMain
+            // invokeMain( c );
         } catch ( Exception ex ) {
             ex.printStackTrace();
         }
     }
 
     public static void invokeMain( Class c ) throws NoSuchMethodException, IllegalArgumentException, InvocationTargetException {
-        Method m = c.getMethod( "main", new Class[]{ c } );
+        String[] argv =  { "Dummy1", "Dummy2" };
+        Method m = c.getMethod( "main", new Class[]{ argv.getClass() } );
         m.setAccessible( true );
         int mods = m.getModifiers();
         if ( m.getReturnType() != void.class || !Modifier.isStatic( mods ) || !Modifier.isPublic( mods ) ) {
             throw new NoSuchMethodException( "main" );
         }
         try {
-            m.invoke( null, new Object[]{ "Dummy1", "Dummy2" } );
+            m.invoke(null,  new Object[] { argv }  );
         } catch ( IllegalAccessException e ) {
         }
 

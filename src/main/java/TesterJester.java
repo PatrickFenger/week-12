@@ -1,6 +1,6 @@
 
-public class Tester {
-   public Tester () {
+public class TesterJester {
+   public TesterJester () {
       System.out.println ("Hello there");
    }
 
