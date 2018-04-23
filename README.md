@@ -11,7 +11,7 @@ This week we will go through the missing OWASP Top 10 Security Risks (we will sk
 - Read/skim [Secure Headers](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project#tab=Headers)
 
 ## Exercises
-[A6-exercises - TBD](#)
+[A6-exercises](https://docs.google.com/document/d/18QUl7zTJLlHCY8FmFJtFzBAITFawTLfAlGdhHlsX1gE/edit?usp=sharing)
 
 ## Thuersdays lesson is cancelled, due to the "event" next week
 Spend you time on the courses, suffering from you absence next week

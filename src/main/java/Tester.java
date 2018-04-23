@@ -1,4 +1,3 @@
-package cphkasper.week12deserialization;
 
 public class Tester {
    public Tester () {
